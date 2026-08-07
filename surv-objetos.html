@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🌟 Objetos Extra | Family Network</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta name="description" content="🌟 Objetos Extra en la tienda de Family Network. Coordiná tu compra por Discord o contacto.">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="assets/vox.css" rel="stylesheet">
+</head>
+<body class="store-body">
+    <header class="store-header">
+        <div class="store-header-inner">
+            <div class="store-topbar">
+                <a href="index.html" class="store-back"><i class="fa-solid fa-arrow-left"></i> <span>Volver al inicio</span></a>
+                <div class="store-login"><i class="fa-solid fa-user"></i> Invitado</div>
+            </div>
+            <div class="store-header-grid">
+                <div class="store-widget store-widget--ip" onclick="copyIP()">
+                    <div class="store-widget--icon"><i class="fa-solid fa-anchor"></i></div>
+                    <div>
+                        <div class="store-widget--label" id="storeIP">stank-tara.tun.ply.gg</div>
+                        <div class="store-widget--sub">Haz clic para copiar</div>
+                    </div>
+                </div>
+                <a href="index.html" class="store-logo" aria-label="Volver al inicio de Family Network">
+                    <img src="assets/images/logo.png" alt="Family Network" animation-logo="pulse">
+                </a>
+                <a href="#" class="store-widget store-widget--discord" onclick="showToast('Discord próximamente disponible'); return false;">
+                    <div class="store-widget--icon"><i class="fa-brands fa-discord"></i></div>
+                    <div>
+                        <div class="store-widget--label">Servidor de Discord</div>
+                        <div class="store-widget--sub">Haz clic para unirte</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+<ul class="store-catsbar"><li><a href="tienda.html"><i class="fa-brands fa-skyatlas"></i> SkyBlock <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="skyblock-rangos.html">💰 Rangos Permanentes</a></li><li><a href="skyblock-mejoras.html">🔱 Mejoras de Rango</a></li><li><a href="skyblock-objetos.html">🌟 Objetos Extra</a></li><li><a href="skyblock-battlepass.html">✈️ BattlePass</a></li><li><a href="skyblock-futbol.html">⚽ Fútbol</a></li></ul></li><li><a href="tienda.html" class="active"><i class="fa-solid fa-tree"></i> Surv.Clásico <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="surv-rangos.html">💰 Rangos Permanentes</a></li><li><a href="surv-mejoras.html">🔱 Mejoras de Rango</a></li><li><a href="surv-objetos.html">🌟 Objetos Extra</a></li><li><a href="surv-mascotas.html">🐾 Mascotas</a></li></ul></li><li><a href="tienda.html"><i class="fa-solid fa-box-open"></i> Extras <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="extras-objetos.html">🧩 Objetos</a></li><li><a href="extras-beneficios.html">🎁 Beneficios</a></li></ul></li></ul>
+    <main class="store-main">
+        <p class="store-cat-title">🌟 Objetos Extra — Surv.Clásico</p>
+<p class="store-cat-sub">Coordiná la compra y entrega por Discord o contacto.</p>
+<div class="store-grid">
+            <div class="store-card">
+                <span class="store-card--thumb">🗝️</span>
+                <p class="store-card--name">Llave Misteriosa</p>
+                <div class="store-card__price--list"><span class="store-card--price">$3 <small>USD</small></span></div>
+                <p class="store-card--desc">Abre cofres del evento</p>
+                <div class="store-card__buttons">
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Llave Misteriosa')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+            <div class="store-card">
+                <span class="store-card--thumb">🧸</span>
+                <p class="store-card--name">Spawner</p>
+                <div class="store-card__price--list"><span class="store-card--price">$5 <small>USD</small></span></div>
+                <p class="store-card--desc">Spawner de mobs</p>
+                <div class="store-card__buttons">
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Spawner')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+            <div class="store-card">
+                <span class="store-card--thumb">💰</span>
+                <p class="store-card--name">Kit de Dinero</p>
+                <div class="store-card__price--list"><span class="store-card--price">$2 <small>USD</small></span></div>
+                <p class="store-card--desc">Recibís monedas al instante</p>
+                <div class="store-card__buttons">
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Kit de Dinero')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+            <div class="store-card">
+                <span class="store-card--thumb">🎁</span>
+                <p class="store-card--name">Caja Sorpresa</p>
+                <div class="store-card__price--list"><span class="store-card--price">$4 <small>USD</small></span></div>
+                <p class="store-card--desc">Premios aleatorios</p>
+                <div class="store-card__buttons">
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Caja Sorpresa')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center; font-size:12px; margin-top:22px; color:var(--muted);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
+    </main>
+
+    <div class="toast-message" id="infoToast" role="status" aria-live="polite"></div>
+    <script src="assets/vox.js" defer></script>
+    <script>
+        function showToast(msg) {
+            const t = document.getElementById('infoToast');
+            if (!t) return;
+            t.textContent = msg;
+            t.classList.add('show');
+            window.setTimeout(() => t.classList.remove('show'), 2200);
+        }
+        function copyIP() {
+            const ip = 'stank-tara.tun.ply.gg';
+            const done = () => showToast('IP copiada al portapapeles');
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(ip).then(done).catch(() => fallbackCopy(ip, done));
+            } else {
+                fallbackCopy(ip, done);
+            }
+        }
+        function fallbackCopy(text, cb) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(ta);
+            cb && cb();
+        }
+    </script>
+</body>
+</html>

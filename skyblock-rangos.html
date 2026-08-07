@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tienda | Family Network</title>
+    <title>SkyBlock · Rangos Permanentes | Family Network</title>
     <link rel="icon" href="assets/images/logo.png">
-    <meta name="description" content="Tienda de Family Network: rangos permanentes, protecciones y extras. Comprá y coordiná la entrega por Discord o contacto.">
+    <meta name="description" content="SkyBlock · Rangos Permanentes en la tienda de Family Network. Coordiná tu compra por Discord o contacto.">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
     <link href="assets/vox.css" rel="stylesheet">
 </head>
@@ -16,7 +16,6 @@
                 <a href="index.html" class="store-back"><i class="fa-solid fa-arrow-left"></i> <span>Volver al inicio</span></a>
                 <div class="store-login"><i class="fa-solid fa-user"></i> Invitado</div>
             </div>
-
             <div class="store-header-grid">
                 <div class="store-widget store-widget--ip" onclick="copyIP()">
                     <div class="store-widget--icon"><i class="fa-solid fa-anchor"></i></div>
@@ -25,11 +24,9 @@
                         <div class="store-widget--sub">Haz clic para copiar</div>
                     </div>
                 </div>
-
                 <a href="index.html" class="store-logo" aria-label="Volver al inicio de Family Network">
                     <img src="assets/images/logo.png" alt="Family Network" animation-logo="pulse">
                 </a>
-
                 <a href="#" class="store-widget store-widget--discord" onclick="showToast('Discord próximamente disponible'); return false;">
                     <div class="store-widget--icon"><i class="fa-brands fa-discord"></i></div>
                     <div>
@@ -40,102 +37,11 @@
             </div>
         </div>
     </header>
-
-    <nav class="store-catsbar-wrap" aria-label="Categorías de la tienda">
-        <ul class="store-catsbar">
-            <li>
-                <a href="tienda.html" class="active"><i class="fa-brands fa-skyatlas"></i> SkyBlock <i class="fa-solid fa-chevron-down caret"></i></a>
-                <ul class="store-dropdown">
-                    <li><a href="skyblock-rangos.html">💰 Rangos Permanentes</a></li>
-                    <li><a href="skyblock-mejoras.html">🔱 Mejoras de Rango</a></li>
-                    <li><a href="skyblock-objetos.html">🌟 Objetos Extra</a></li>
-                    <li><a href="skyblock-battlepass.html">✈️ BattlePass</a></li>
-                    <li><a href="skyblock-futbol.html">⚽ Fútbol</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="tienda.html"><i class="fa-solid fa-tree"></i> Surv.Clásico <i class="fa-solid fa-chevron-down caret"></i></a>
-                <ul class="store-dropdown">
-                    <li><a href="surv-rangos.html">💰 Rangos Permanentes</a></li>
-                    <li><a href="surv-mejoras.html">🔱 Mejoras de Rango</a></li>
-                    <li><a href="surv-objetos.html">🌟 Objetos Extra</a></li>
-                    <li><a href="surv-mascotas.html">🐾 Mascotas</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" onclick="showToast('💬 Pedinos más productos por contacto');return false;"><i class="fa-solid fa-box-open"></i> Extras <i class="fa-solid fa-chevron-down caret"></i></a>
-                <ul class="store-dropdown">
-                    <li><a href="extras-objetos.html">🧩 Objetos</a></li>
-                    <li><a href="extras-beneficios.html">🎁 Beneficios</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
+<ul class="store-catsbar"><li><a href="tienda.html" class="active"><i class="fa-brands fa-skyatlas"></i> SkyBlock <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="skyblock-rangos.html">💰 Rangos Permanentes</a></li><li><a href="skyblock-mejoras.html">🔱 Mejoras de Rango</a></li><li><a href="skyblock-objetos.html">🌟 Objetos Extra</a></li><li><a href="skyblock-battlepass.html">✈️ BattlePass</a></li><li><a href="skyblock-futbol.html">⚽ Fútbol</a></li></ul></li><li><a href="tienda.html"><i class="fa-solid fa-tree"></i> Surv.Clásico <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="surv-rangos.html">💰 Rangos Permanentes</a></li><li><a href="surv-mejoras.html">🔱 Mejoras de Rango</a></li><li><a href="surv-objetos.html">🌟 Objetos Extra</a></li><li><a href="surv-mascotas.html">🐾 Mascotas</a></li></ul></li><li><a href="tienda.html"><i class="fa-solid fa-box-open"></i> Extras <i class="fa-solid fa-chevron-down caret"></i></a><ul class="store-dropdown"><li><a href="extras-objetos.html">🧩 Objetos</a></li><li><a href="extras-beneficios.html">🎁 Beneficios</a></li></ul></li></ul>
     <main class="store-main">
-        <div class="store-homeport">
-            <div class="welcome-s">
-                <p>Bienvenido a la tienda oficial</p>
-                <p>Family Network</p>
-            </div>
-            <div class="store-splashgoal">
-                <div class="store-splashgoal--body">
-                    <p class="goal__title">Meta mensual</p>
-                    <p class="goal__progress"><span>$0</span> <span>0%</span></p>
-                </div>
-                <div class="store-splashgoal--footer"><div class="goal__bar" data-goal></div></div>
-            </div>
-            <p class="store-banner"><img src="assets/images/esta.png" alt="Family Network Store"></p>
-            <p class="store-banner-note">Bienvenido a nuestra <strong>tienda oficial</strong>, aquí encontrarás una gran variedad de beneficios para mejorar tu experiencia de juego dentro del servidor. El dinero recaudado será invertido en el <strong>mantenimiento</strong> y el <strong>desarrollo</strong> de nuestro servidor.</p>
-
-            <div class="store-info-row">
-                <div class="store-info-cell store-info-cell--img"><img src="assets/images/dudas.png" alt="¿Tienes dudas al momento de comprar?"></div>
-                <div class="store-info-cell">
-                    <div class="store-info-title">¿Tienes dudas al momento de comprar?</div>
-                    <p class="store-info-text">No te preocupes, una vez realizada tu compra del rango u objeto, la entrega puede tardar entre <strong>5</strong> y <strong>30 minutos</strong>. Solo asegúrate de encontrarte dentro de la modalidad en la que efectuaste la compra. Si el tiempo de espera se prolonga, no dudes en contactarnos a través de <strong>Discord</strong> y abrir un ticket; nuestro equipo estará encantado de ayudarte.</p>
-                </div>
-            </div>
-
-            <div class="store-info-row">
-                <div class="store-info-cell">
-                    <div class="store-info-title">¿Eres padre y tu hijo juega en Family Network?</div>
-                    <p class="store-info-text">En <strong>Family Network</strong> nos comprometemos a ofrecer la mejor atención a nuestros usuarios, garantizando un entorno de juego seguro y confiable. Fomentamos una comunidad familiar y respetuosa, donde la amabilidad y la buena convivencia son siempre prioridad.</p>
-                </div>
-                <div class="store-info-cell store-info-col-img"><img src="assets/images/padre.png" alt="Comunidad familiar"></div>
-            </div>
-
-            <h3 class="store-methods-title">Métodos de pago</h3>
-            <p class="store-methods-text">Actualmente disponemos de más de <strong>50 métodos de pago</strong> en nuestra tienda, todos procesados a través de <strong>sistemas seguros</strong>, lo que garantiza que tu compra sea eficaz, rápida y totalmente segura.</p>
-            <p class="store-methods-text">Nuestra política establece que no se aceptarán reembolsos ni contracargos, salvo en casos donde el inconveniente provenga directamente de nosotros o de un error externo a la plataforma.</p>
-            <p class="store-pay-img"><img src="assets/images/pago.png" alt="Métodos de pago"></p>
-        </div>
-
-        <div class="store-featured">
-            <div class="store-featured__title" style="flex:1 1 100%">✦ Mejoras destacadas</div>
-            <div class="store-featured--item" onclick="showToast('📩 Escribinos para comprar el rango Dios')">
-                <div class="store-featured--circle">👑</div>
-                <div class="store-featured--text"><p>Rango Dios</p><p class="f-price">$20 USD</p></div>
-            </div>
-            <div class="store-featured--item" onclick="showToast('📩 Escribinos para comprar el rango Élite')">
-                <div class="store-featured--circle">⚔️</div>
-                <div class="store-featured--text"><p>Rango Élite</p><p class="f-price">$4 USD</p></div>
-            </div>
-            <div class="store-featured--item" onclick="showToast('📩 Escribinos para coordinar una protección')">
-                <div class="store-featured--circle">🛡️</div>
-                <div class="store-featured--text"><p>Protecciones</p><p class="f-price">Desde $500</p></div>
-            </div>
-        </div>
-
-        <p class="store-cat-title">💰 Rangos Permanentes</p>
-        <p class="store-cat-sub">Mejora tu experiencia de juego con un rango permanente. La entrega se coordina por Discord o contacto.</p>
-
-        <ul class="store-cats">
-            <li><a href="tienda.html" class="store-cats__active"><span class="store-cats__icon">👑</span> Rangos</a></li>
-            <li><a href="#" onclick="showToast('🛡️ Protecciones: coordiná por Discord o contacto');return false;"><span class="store-cats__icon">🛡️</span> Protecciones</a></li>
-            <li><a href="#" onclick="showToast('💬 Pedinos más productos por contacto');return false;"><span class="store-cats__icon">🧩</span> Extras</a></li>
-        </ul>
-
-        <div class="store-grid">
+        <p class="store-cat-title">💰 Rangos Permanentes — SkyBlock</p>
+<p class="store-cat-sub">Mejora tu experiencia con un rango permanente. La entrega se coordina por Discord o contacto.</p>
+<div class="store-grid">
             <div class="store-card">
                 <span class="store-card--thumb">🧑</span>
                 <p class="store-card--name">Usuario</p>
@@ -145,7 +51,6 @@
                     <button class="store-card__buy store-card__buy--owned" disabled>Actual</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">💎</span>
                 <p class="store-card--name">VIP</p>
@@ -155,20 +60,15 @@
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar VIP')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">⚔️</span>
                 <p class="store-card--name">Élite</p>
-                <div class="store-card__price--list">
-                    <span class="store-card--discount">$6</span>
-                    <span class="store-card--price">$4 <small>USD</small></span>
-                </div>
+                <div class="store-card__price--list"><span class="store-card--discount">$6</span><span class="store-card--price">$4 <small>USD</small></span></div>
                 <div class="store-card__buttons">
-                    <button class="store-card__info" onclick="showToast('⚔️ Élite: 5 protecciones · 6 homes · protecciones hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__info" onclick="showToast('⚔️ Élite: 5 protecciones · 6 homes · hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Élite')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">📜</span>
                 <p class="store-card--name">Leyenda</p>
@@ -178,7 +78,6 @@
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Leyenda')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">😈</span>
                 <p class="store-card--name">Demonio</p>
@@ -188,7 +87,6 @@
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Demonio')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">😇</span>
                 <p class="store-card--name">Ángel</p>
@@ -198,21 +96,16 @@
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Ángel')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
-
             <div class="store-card">
                 <span class="store-card--thumb">👑</span>
                 <p class="store-card--name">Dios</p>
-                <div class="store-card__price--list">
-                    <span class="store-card--discount">$25</span>
-                    <span class="store-card--price">$20 <small>USD</small></span>
-                </div>
+                <div class="store-card__price--list"><span class="store-card--discount">$25</span><span class="store-card--price">$20 <small>USD</small></span></div>
                 <div class="store-card__buttons">
                     <button class="store-card__info" onclick="showToast('👑 Dios: 15 protecciones · 20 homes · hasta 60x60')"><i class="fa-solid fa-circle-info"></i></button>
                     <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Dios')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
                 </div>
             </div>
         </div>
-
         <p style="text-align:center; font-size:12px; margin-top:22px; color:var(--muted);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
     </main>
 
