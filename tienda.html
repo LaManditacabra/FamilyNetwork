@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/logo.png">
     <meta name="description" content="Tienda de Family Network: rangos permanentes, protecciones y extras. Comprá y coordiná la entrega por Discord o contacto.">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="assets/vox.css" rel="stylesheet">
 </head>
 <body class="store-body">
@@ -72,6 +73,52 @@
         </ul>
     </nav>
 
+    <div class="body--with-sidebar">
+    <aside class="triplezone-sidebar">
+        <div class="triplezone__modules">
+            <div class="triplezone__modules__module" data-module-type="topDonor">
+                <div class="triplezone__modules__module__header"><i class="fa-solid fa-crown"></i><p>Comprador anual</p></div>
+                <div class="top__payments--body">
+                    <div class="top-donator">
+                        <div class="avatar"><img src="https://minotar.net/armor/bust/MHF_Question/38" alt=""></div>
+                        <div class="info"><div class="ign">—</div><div class="amount">Mayor comprador de este año.</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="triplezone__modules__module" data-module-type="topDonor">
+                <div class="triplezone__modules__module__header"><i class="fa-solid fa-crown"></i><p>Comprador mensual</p></div>
+                <div class="top__payments--body">
+                    <div class="top-donator">
+                        <div class="avatar"><img src="https://minotar.net/armor/bust/MHF_Question/38" alt=""></div>
+                        <div class="info"><div class="ign">—</div><div class="amount">Mayor comprador de este mes.</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="triplezone__modules__module" data-module-type="recentPayments">
+                <div class="triplezone__modules__module__header"><i class="fa-solid fa-cart-shopping"></i><p>Compras recientes</p></div>
+                <div class="payments-flex">
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                    <div class="payment-pr"><div class="payment-tooltip"><p>jugador</p></div><img src="https://minotar.net/avatar/MHF_Question/64" alt=""></div>
+                </div>
+            </div>
+            <div class="triplezone__modules__module">
+                <div class="triplezone__modules__module__header"><i class="fa-solid fa-message"></i><p>Contacto</p></div>
+                <div class="triplezone__modules__module__body">
+                    <p>¿Dudas? Escribinos a <strong style="color:var(--gold)">soporte@familynetwork.com</strong> o por Discord.</p>
+                </div>
+            </div>
+            <div class="triplezone__modules__module">
+                <div class="triplezone__modules__module__header"><i class="fa-solid fa-circle-info"></i><p>Información</p></div>
+                <div class="triplezone__modules__module__body">
+                    <p>Family Network no está afiliada a Mojang AB. Minecraft © Mojang AB.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
     <main class="store-main">
         <div class="store-homeport">
             <div class="welcome-s">
@@ -215,6 +262,7 @@
 
         <p style="text-align:center; font-size:12px; margin-top:22px; color:var(--muted);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
     </main>
+    </div>
 
     <div class="toast-message" id="infoToast" role="status" aria-live="polite"></div>
     <script src="assets/vox.js" defer></script>
