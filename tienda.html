@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda | Family Network</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta name="description" content="Tienda de Family Network: rangos permanentes, protecciones y extras. Comprá y coordiná la entrega por Discord o contacto.">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="assets/vox.css" rel="stylesheet">
+</head>
+<body class="store-body">
+    <header class="store-header">
+        <div class="store-header-inner">
+            <div class="store-topbar">
+                <a href="index.html" class="store-back"><i class="fa-solid fa-arrow-left"></i> <span>Volver al inicio</span></a>
+                <div class="store-login"><i class="fa-solid fa-user"></i> Invitado</div>
+            </div>
+
+            <div class="store-header-grid">
+                <div class="store-widget store-widget--ip" onclick="copyIP()">
+                    <div class="store-widget--icon"><i class="fa-solid fa-anchor"></i></div>
+                    <div>
+                        <div class="store-widget--label" id="storeIP">stank-tara.tun.ply.gg</div>
+                        <div class="store-widget--sub">Haz clic para copiar</div>
+                    </div>
+                </div>
+
+                <a href="index.html" class="store-logo" aria-label="Volver al inicio de Family Network">
+                    <img src="assets/images/logo.png" alt="Family Network">
+                </a>
+
+                <a href="#" class="store-widget store-widget--discord" onclick="showToast('Discord próximamente disponible'); return false;">
+                    <div class="store-widget--icon"><i class="fa-brands fa-discord"></i></div>
+                    <div>
+                        <div class="store-widget--label">Servidor de Discord</div>
+                        <div class="store-widget--sub">Haz clic para unirte</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="store-catsbar" aria-label="Categorías de la tienda">
+        <a href="tienda.html" class="active"><i class="fa-solid fa-crown"></i> Rangos</a>
+        <a href="protecciones.html"><i class="fa-solid fa-shield-halved"></i> Protecciones</a>
+        <a href="#" onclick="showToast('💬 Pedinos más productos por contacto'); return false;">🧩 Extras</a>
+    </nav>
+
+    <main class="store-main">
+        <div class="store-featured">
+            <div class="store-featured__title" style="flex:1 1 100%">✦ Mejoras destacadas</div>
+            <div class="store-featured--item" onclick="showToast('📩 Escribinos para comprar el rango Dios')">
+                <div class="store-featured--circle">👑</div>
+                <div class="store-featured--text"><p>Rango Dios</p><p class="f-price">$20 USD</p></div>
+            </div>
+            <div class="store-featured--item" onclick="showToast('📩 Escribinos para comprar el rango Élite')">
+                <div class="store-featured--circle">⚔️</div>
+                <div class="store-featured--text"><p>Rango Élite</p><p class="f-price">$4 USD</p></div>
+            </div>
+            <div class="store-featured--item" onclick="location.href='protecciones.html'">
+                <div class="store-featured--circle">🛡️</div>
+                <div class="store-featured--text"><p>Protecciones</p><p class="f-price">Desde $500</p></div>
+            </div>
+        </div>
+
+        <p class="store-cat-title">💰 Rangos Permanentes</p>
+        <p class="store-cat-sub">Mejora tu experiencia de juego con un rango permanente. La entrega se coordina por Discord o contacto.</p>
+
+        <ul class="store-cats">
+            <li><a href="tienda.html" class="store-cats__active"><span class="store-cats__icon">👑</span> Rangos</a></li>
+            <li><a href="protecciones.html"><span class="store-cats__icon">🛡️</span> Protecciones</a></li>
+            <li><a href="#" onclick="showToast('💬 Pedinos más productos por contacto');return false;"><span class="store-cats__icon">🧩</span> Extras</a></li>
+        </ul>
+
+        <div class="store-grid">
+            <div class="store-card">
+                <span class="store-card--thumb">🧑</span>
+                <p class="store-card--name">Usuario</p>
+                <div class="store-card__price--list"><span class="store-card--price" style="color:var(--muted)">Gratis</span></div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('📋 Usuario: el rango de inicio, lo tenés al entrar')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy store-card__buy--owned" disabled>Actual</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">💎</span>
+                <p class="store-card--name">VIP</p>
+                <div class="store-card__price--list"><span class="store-card--price">$2 <small>USD</small></span></div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('💎 VIP: 3 protecciones · 3 homes · prefijo exclusivo')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar VIP')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">⚔️</span>
+                <p class="store-card--name">Élite</p>
+                <div class="store-card__price--list">
+                    <span class="store-card--discount">$6</span>
+                    <span class="store-card--price">$4 <small>USD</small></span>
+                </div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('⚔️ Élite: 5 protecciones · 6 homes · protecciones hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Élite')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">📜</span>
+                <p class="store-card--name">Leyenda</p>
+                <div class="store-card__price--list"><span class="store-card--price">$7 <small>USD</small></span></div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('📜 Leyenda: 7 protecciones · 9 homes · hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Leyenda')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">😈</span>
+                <p class="store-card--name">Demonio</p>
+                <div class="store-card__price--list"><span class="store-card--price">$10 <small>USD</small></span></div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('😈 Demonio: 9 protecciones · 12 homes · zonas exclusivas')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Demonio')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">😇</span>
+                <p class="store-card--name">Ángel</p>
+                <div class="store-card__price--list"><span class="store-card--price">$15 <small>USD</small></span></div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('😇 Ángel: 12 protecciones · 15 homes · zonas exclusivas')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Ángel')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <span class="store-card--thumb">👑</span>
+                <p class="store-card--name">Dios</p>
+                <div class="store-card__price--list">
+                    <span class="store-card--discount">$25</span>
+                    <span class="store-card--price">$20 <small>USD</small></span>
+                </div>
+                <div class="store-card__buttons">
+                    <button class="store-card__info" onclick="showToast('👑 Dios: 15 protecciones · 20 homes · hasta 60x60')"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Dios')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align:center; font-size:12px; margin-top:22px; color:var(--muted);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
+    </main>
+
+    <div class="toast-message" id="infoToast" role="status" aria-live="polite"></div>
+    <script src="assets/vox.js" defer></script>
+    <script>
+        function showToast(msg) {
+            const t = document.getElementById('infoToast');
+            if (!t) return;
+            t.textContent = msg;
+            t.classList.add('show');
+            window.setTimeout(() => t.classList.remove('show'), 2200);
+        }
+        function copyIP() {
+            const ip = 'stank-tara.tun.ply.gg';
+            const done = () => showToast('IP copiada al portapapeles');
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(ip).then(done).catch(() => fallbackCopy(ip, done));
+            } else {
+                fallbackCopy(ip, done);
+            }
+        }
+        function fallbackCopy(text, cb) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(ta);
+            cb && cb();
+        }
+    </script>
+</body>
+</html>
