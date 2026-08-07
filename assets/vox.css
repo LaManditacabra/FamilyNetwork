@@ -103,7 +103,7 @@
 .store-catsbar>li>a .caret{font-size:1.25rem;transition:transform .2s ease}
 .store-catsbar>li:hover>a{color:#fff}
 .store-catsbar>li:hover>a .caret{transform:rotate(180deg)}
-.store-dropdown{list-style:none;margin:10px 0 0;padding:8px;width:max-content;min-width:230px;position:absolute;left:0;top:100%;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 45px rgba(0,0,0,.32);display:none;z-index:20}
+.store-dropdown{list-style:none;margin:0;padding:12px 8px 8px;width:max-content;min-width:230px;position:absolute;left:0;top:calc(100% - 6px);background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 45px rgba(0,0,0,.32);display:none;z-index:20}
 .store-catsbar>li:hover>.store-dropdown{display:block}
 .store-dropdown a{display:flex;align-items:center;gap:10px;padding:13px 18px;border-radius:10px;color:var(--muted);font-size:.9rem;font-weight:700;transition:.2s;text-decoration:none}
 .store-dropdown a:hover{color:#fff;background:rgba(255,216,77,.07)}
