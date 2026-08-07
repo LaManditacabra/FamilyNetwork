@@ -1,4 +1,3 @@
-<script>
 // ===================== Configuración =====================
 // Pega acá tu Client ID de Google (pasos en assets/README-AUTH.md)
 const GOOGLE_CLIENT_ID = ''; // TODO: tu client.id de Google Cloud
@@ -250,4 +249,3 @@ document.addEventListener('click', (e) => {
     const u = getStoredUser();
     if (u) renderUser(u);
 })();
-</script>
