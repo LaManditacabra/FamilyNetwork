@@ -41,10 +41,35 @@
         </div>
     </header>
 
-    <nav class="store-catsbar" aria-label="Categorías de la tienda">
-        <a href="tienda.html" class="active"><i class="fa-solid fa-crown"></i> Rangos</a>
-        <a href="protecciones.html"><i class="fa-solid fa-shield-halved"></i> Protecciones</a>
-        <a href="#" onclick="showToast('💬 Pedinos más productos por contacto'); return false;">🧩 Extras</a>
+    <nav class="store-catsbar-wrap" aria-label="Categorías de la tienda">
+        <ul class="store-catsbar">
+            <li>
+                <a href="tienda.html" class="active"><i class="fa-brands fa-skyatlas"></i> SkyBlock <i class="fa-solid fa-chevron-down caret"></i></a>
+                <ul class="store-dropdown">
+                    <li><a href="tienda.html">💰 Rangos Permanentes</a></li>
+                    <li><a href="tienda.html">🔱 Mejoras de Rango</a></li>
+                    <li><a href="tienda.html">🌟 Objetos Extra</a></li>
+                    <li><a href="tienda.html">✈️ BattlePass</a></li>
+                    <li><a href="tienda.html">⚽ Fútbol</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="tienda.html"><i class="fa-solid fa-tree"></i> Surv.Clásico <i class="fa-solid fa-chevron-down caret"></i></a>
+                <ul class="store-dropdown">
+                    <li><a href="tienda.html">💰 Rangos Permanentes</a></li>
+                    <li><a href="tienda.html">🔱 Mejoras de Rango</a></li>
+                    <li><a href="tienda.html">🌟 Objetos Extra</a></li>
+                    <li><a href="tienda.html">🐾 Mascotas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="showToast('💬 Pedinos más productos por contacto');return false;"><i class="fa-solid fa-box-open"></i> Extras <i class="fa-solid fa-chevron-down caret"></i></a>
+                <ul class="store-dropdown">
+                    <li><a href="#" onclick="showToast('💬 Objetos personalizados');return false;">🧩 Objetos</a></li>
+                    <li><a href="#" onclick="showToast('💬 Pedinos más info');return false;">🎁 Beneficios</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <main class="store-main">
