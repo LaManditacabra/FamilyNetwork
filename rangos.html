@@ -25,6 +25,9 @@
 <li><a href="rangos.html" class="nav-link active">Rangos</a></li>
 <li><a href="protecciones.html" class="nav-link">Protecciones</a></li>
 <li><a href="clientes.html" class="nav-link">Clientes</a></li>
+<li><a href="staff.html" class="nav-link">Staff</a></li>
+<li><a href="requisitos.html" class="nav-link">Requisitos</a></li>
+
         </ul>
 
         <a href="rangos.html" class="btn-store" rel="noopener">
@@ -44,123 +47,93 @@
     </header>
 
     <main class="content-wrap">
-        <div class="featured__packages">
-        <p class="featured__packages--title">✦ Mejoras de rango</p>
-        <div class="featured__packages--flex">
-        <div class="featured__package" onclick="showToast('📩 Escribinos para comprar el rango Dios')">
-        <div class="featured__package--circle">👑</div>
-        <div class="featured__package--text">
-        <p>Rango Dios</p>
-        <p class="price">$20 <small>USD</small></p>
-        <p class="mini-desc">Máximo poder</p>
-        </div>
-        </div>
-        <div class="featured__package" onclick="showToast('📩 Escribinos para comprar el rango Élite')">
-        <div class="featured__package--circle">⚔️</div>
-        <div class="featured__package--text">
-        <p>Rango Élite</p>
-        <p class="price">$4 <small>USD</small></p>
-        <p class="mini-desc">El favorito</p>
-        </div>
-        </div>
-        <div class="featured__package" onclick="location.href='protecciones.html'">
-        <div class="featured__package--circle">🛡️</div>
-        <div class="featured__package--text">
-        <p>Protecciones</p>
-        <p class="price">Desde $500</p>
-        <p class="mini-desc">In-game · ver más</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="ranks-grid">
-        <div class="rank-card">
-        <div class="rank-name">Usuario</div>
-        <div class="rank-desc">Para empezar</div>
-        <div class="rank-price">Gratis</div>
-        <ul class="rank-features">
-        <li>Protecciones: 2</li>
-        <li>Homes: 1</li>
-        <li>Bloques de protección básicos</li>
-        <li class="off">Prefijo exclusivo</li>
+        <ul class="store-cats">
+            <li><a href="rangos.html" class="store-cats__active"><span class="store-cats__icon">👑</span> Rangos</a></li>
+            <li><a href="protecciones.html"><span class="store-cats__icon">🛡️</span> Protecciones</a></li>
+            <li><a href="#" onclick="showToast('💬 Pedinos más productos por contacto')"><span class="store-cats__icon">🧩</span> Extras</a></li>
         </ul>
-        <button class="btn-buy" onclick="showToast('📍 Este rango lo tenés al entrar')">Rango actual</button>
-        </div>
-        <div class="rank-card">
-        <div class="rank-name">VIP</div>
-        <div class="rank-desc">Más espacio</div>
-        <div class="rank-price">$2 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 3</li>
-        <li>Homes: 3</li>
-        <li>Prefijo VIP exclusivo</li>
-        <li class="off">Protección épica</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar VIP')">Comprar</button>
-        </div>
-        <div class="rank-card popular">
-        <div class="ribbon">⭐ Popular</div>
-        <div class="rank-name">Élite</div>
-        <div class="rank-desc">El equilibrio perfecto</div>
-        <div class="rank-price">$4 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 5</li>
-        <li>Homes: 6</li>
-        <li>Prefijo Élite exclusivo</li>
-        <li>Protecciones hasta 40x40</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Élite')">Comprar</button>
-        </div>
-        <div class="rank-card">
-        <div class="rank-name">Leyenda</div>
-        <div class="rank-desc">Constructores serios</div>
-        <div class="rank-price">$7 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 7</li>
-        <li>Homes: 9</li>
-        <li>Prefijo Leyenda exclusivo</li>
-        <li>Protecciones hasta 40x40</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Leyenda')">Comprar</button>
-        </div>
-        <div class="rank-card">
-        <div class="rank-name">Demonio</div>
-        <div class="rank-desc">Más poder</div>
-        <div class="rank-price">$10 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 9</li>
-        <li>Homes: 12</li>
-        <li>Prefijo Demonio exclusivo</li>
-        <li>Acceso a zonas exclusivas</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Demonio')">Comprar</button>
-        </div>
-        <div class="rank-card">
-        <div class="rank-name">Ángel</div>
-        <div class="rank-desc">Casi sin límites</div>
-        <div class="rank-price">$15 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 12</li>
-        <li>Homes: 15</li>
-        <li>Prefijo Ángel exclusivo</li>
-        <li>Acceso a zonas exclusivas</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Ángel')">Comprar</button>
-        </div>
-        <div class="rank-card">
-        <div class="rank-name">Dios</div>
-        <div class="rank-desc">El máximo rango</div>
-        <div class="rank-price">$20 <small>USD</small></div>
-        <ul class="rank-features">
-        <li>Protecciones: 15</li>
-        <li>Homes: 20</li>
-        <li>Prefijo Dios exclusivo</li>
-        <li>Protecciones hasta 60x60</li>
-        </ul>
-        <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Dios')">Comprar</button>
+
+        <h2 class="section--title">✦ Mejoras de rango</h2>
+
+        <div class="store-grid">
+        <div class="store-card">
+        <span class="store-card--thumb">🧑</span>
+        <p class="store-card--name">Usuario</p>
+        <div class="store-card__price--list"><span class="store-card--price" style="color:var(--muted)">Gratis</span></div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('📋 Usuario: el rango de inicio, lo tenés al entrar')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy store-card__buy--owned" disabled>Actual</button>
         </div>
         </div>
-        <p style="text-align:center; font-size:12px; margin-top:16px; color:var(--secondary-text-color);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
+
+        <div class="store-card">
+        <span class="store-card__thumb">💎</span>
+        <p class="store-card--name">VIP</p>
+        <div class="store-card__price--list"><span class="store-card--price">$2 <small>USD</small></span></div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('💎 VIP: 3 protecciones · 3 homes · prefijo exclusivo')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar VIP')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+
+        <div class="store-card">
+        <span class="store-card__thumb">⚔️</span>
+        <p class="store-card--name">Élite</p>
+        <div class="store-card__price--list">
+        <span class="store-card--discount">$6</span>
+        <span class="store-card--price">$4 <small>USD</small></span>
+        </div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('⚔️ Élite: 5 protecciones · 6 homes · protecciones hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Élite')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+
+        <div class="store-card">
+        <span class="store-card__thumb">📜</span>
+        <p class="store-card--name">Leyenda</p>
+        <div class="store-card__price--list"><span class="store-card--price">$7 <small>USD</small></span></div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('📜 Leyenda: 7 protecciones · 9 homes · hasta 40x40')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Leyenda')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+
+        <div class="store-card">
+        <span class="store-card__thumb">😈</span>
+        <p class="store-card--name">Demonio</p>
+        <div class="store-card__price--list"><span class="store-card--price">$10 <small>USD</small></span></div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('😈 Demonio: 9 protecciones · 12 homes · zonas exclusivas')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Demonio')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+
+        <div class="store-card">
+        <span class="store-card__thumb">😇</span>
+        <p class="store-card--name">Ángel</p>
+        <div class="store-card__price--list"><span class="store-card--price">$15 <small>USD</small></span></div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('😇 Ángel: 12 protecciones · 15 homes · zonas exclusivas')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Ángel')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+
+        <div class="store-card">
+        <span class="store-card__thumb">👑</span>
+        <p class="store-card--name">Dios</p>
+        <div class="store-card__price--list">
+        <span class="store-card--discount">$25</span>
+        <span class="store-card--price">$20 <small>USD</small></span>
+        </div>
+        <div class="store-card__buttons">
+        <button class="store-card__info" onclick="showToast('👑 Dios: 15 protecciones · 20 homes · hasta 60x60')"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="store-card__buy" onclick="showToast('📩 Escribinos para comprar Dios')"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+        </div>
+        </div>
+        </div>
+
+        <p style="text-align:center; font-size:12px; margin-top:20px; color:var(--muted);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
     </main>
 
     <footer class="footer-modern">
