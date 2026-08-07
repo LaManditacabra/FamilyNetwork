@@ -391,6 +391,28 @@ img { max-width: 100%; }
 .faq-item[open] summary::after { content: "−"; }
 .faq-item p { margin-top: 10px; font-size: 13px; line-height: 1.6; }
 
+/* ===== Clientes / mods no permitidos ===== */
+.clients-block { display: block; margin-bottom: 20px; }
+.clients-block--title { color: var(--main-color); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: var(--medium-font); margin-bottom: 8px; }
+.clients-block--note { font-size: 13px; line-height: 1.6; color: var(--secondary-text-color); margin-bottom: 20px; }
+.clients-group {
+    background: var(--second-background); border: 1px solid var(--package-border);
+    border-radius: var(--border-radius); padding: 20px 22px; margin-bottom: 16px;
+}
+.clients-group--title { color: var(--primary-text-color); font-weight: 800; font-size: var(--medium-font); margin-bottom: 4px; }
+.clients-group--desc { font-size: 12px; color: var(--secondary-text-color); margin-bottom: 14px; }
+.clients-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.clients-tags span {
+    background: rgba(9,173,211,.10); border: 1px solid rgba(9,173,211,.30);
+    color: var(--cool, var(--cold-color)); padding: 6px 13px; border-radius: 999px;
+    font-size: 13px; font-weight: 600;
+}
+.clients-warning {
+    background: rgba(255,91,85,.08); border: 1px solid rgba(255,91,85,.35);
+    border-radius: var(--border-radius); padding: 16px 20px; font-size: 13px; line-height: 1.6;
+}
+.clients-warning p:first-child { color: #ff5b55; font-weight: 800; margin-bottom: 4px; }
+
 /* ===== Toast ===== */
 .toast {
     position: fixed; bottom: 24px; left: 50%;

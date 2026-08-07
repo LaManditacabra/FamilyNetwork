@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cómo jugar | Tienda Family Network</title>
-<meta name="description" content="Cómo jugar en Family Network. Conectate desde Java o Bedrock y disfrutá de una comunidad familiar.">
+<title>Clientes | Tienda Family Network</title>
+<meta name="description" content="Clientes y modificaciones no permitidos en Family Network. Consultá la lista de software prohibido.">
 <meta name="theme-color" content="#09add3">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <link rel="stylesheet" href="assets/style.css">
@@ -85,7 +85,7 @@
                 </ul>
             </li>
             <li class="list__second--nav">
-                <a class="list__second__category--link active" href="como-jugar.html">Cómo jugar <i class="fas fa-chevron-down"></i></a>
+                <a class="list__second__category--link" href="como-jugar.html">Cómo jugar <i class="fas fa-chevron-down"></i></a>
                 <ul class="triplezone__second--dropdown">
                     <li><a href="como-jugar.html">Java</a></li>
                     <li><a href="como-jugar.html">Bedrock</a></li>
@@ -93,7 +93,7 @@
                 </ul>
             </li>
             <li class="list__second--nav">
-                <a class="list__second__category--link" href="clientes.html">Clientes</a>
+                <a class="list__second__category--link active" href="clientes.html">Clientes</a>
             </li>
             <li class="list__second--nav">
                 <a class="list__second__category--link" href="faq.html">FAQ</a>
@@ -128,14 +128,14 @@
                         </ul>
                     </li>
                     <li class="triplezone-toggle-dropdown">
-                        <a href="#" onclick="toggleLi(this)" class="active">📘 Cómo jugar <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" onclick="toggleLi(this)">📘 Cómo jugar <i class="fas fa-chevron-down"></i></a>
                         <ul class="triplezone-dropdown">
                             <li><a href="como-jugar.html">Java</a></li>
                             <li><a href="como-jugar.html">Bedrock</a></li>
                             <li><a href="protecciones.html">Protecciones</a></li>
                         </ul>
                     </li>
-                    <li><a href="clientes.html">🚫 Clientes</a></li>
+                    <li><a href="clientes.html" class="active">🚫 Clientes</a></li>
                     <li><a href="faq.html">❓ FAQ</a></li>
                 </ul>
             </nav>
@@ -179,33 +179,32 @@
 
         <!-- Main -->
         <main class="triplezone-main-content">
-            <p class="page--title">📘 Cómo jugar</p>
-            <p class="page--subtitle">Todo lo que necesitás para arrancar en Family Network.</p>
+            <p class="page--title">🚫 Mods y Clientes</p>
+            <p class="page--subtitle">Consulta la lista oficial de software no permitido. El uso o posesión de herramientas que otorguen ventajas injustas puede resultar en una sanción.</p>
 
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>🖥️ Java</h3>
-                    <p>Multijugador → Agregar servidor. Dirección: <code>stank-tara.tun.ply.gg</code></p>
+            <div class="clients-block">
+                <h3 class="clients-block--title">Clientes y modificaciones ilegales</h3>
+                <p class="clients-block--note">Evita aprovechar vacíos en la lista o utilizar variantes con funciones similares. El equipo administrativo evaluará cada caso de manera individual.</p>
+
+                <div class="clients-group">
+                    <h4 class="clients-group--title">🚫 Clientes ilegales</h4>
+                    <p class="clients-group--desc">Clientes modificados y herramientas con funciones prohibidas.</p>
+                    <div class="clients-tags">
+                        <span>Akira</span><span>Aristois</span><span>Asteria</span><span>Auxentity</span><span>Baritone</span><span>BleachHack</span><span>CheatBreaker</span><span>Cyanit Client</span><span>Doomsday</span><span>Dream Flare</span><span>Flare Client</span><span>Future Client</span><span>Grey Client</span><span>Huzuni</span><span>Impact Client</span><span>Inertia Client</span><span>Iridium</span><span>Itami</span><span>Koid Client</span><span>Kr0w Client</span><span>LiquidBounce</span><span>Lumina Client</span><span>Meteor Client</span><span>Phantom Client</span><span>Platinum Client</span><span>Sky Client</span><span>SkillClient</span><span>Slap</span><span>Slinky</span><span>Sumo Client</span><span>Swaghack</span><span>TacoClient</span><span>Vape</span><span>Wolfram</span><span>Wurst</span><span>Xenox</span>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <h3>📱 Bedrock</h3>
-                    <p>Dirección: <code>katherine-roof.tun.ply.gg</code> puerto <code>56601</code></p>
+
+                <div class="clients-group">
+                    <h4 class="clients-group--title">⚠️ Mods ilegales</h4>
+                    <p class="clients-group--desc">Mods que revelan información, automatizan acciones o alteran mecánicas.</p>
+                    <div class="clients-tags" id="mods-illegal">
+                        <span>Xaero's Minimap</span><span>JourneyMap</span><span>World Downloader</span><span>UI-Utils</span><span>Soup Visuals</span><span>ToroHealth</span><span>Tweakeroo</span><span>ClientCommands</span><span>XRay</span><span>Litematica</span>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <h3>🛡️ Protegé tu zona</h3>
-                    <p>Comprá bloques de protección en la tienda del juego. Colocalos y administralos con <code>/ps</code>. Más info en <a href="protecciones.html">Protecciones</a>.</p>
-                </div>
-                <div class="info-card">
-                    <h3>🏠 Homes y más</h3>
-                    <p>Guardá lugares con <code>/sethome</code>, viajá con <code>/home</code> y volvé con <code>/back</code>.</p>
-                </div>
-                <div class="info-card">
-                    <h3>⚖️ Reglas simples</h3>
-                    <p>Respeto ante todo. Sin griefing, sin trampas, buena convivencia para todos.</p>
-                </div>
-                <div class="info-card">
-                    <h3>👪 Comunidad familiar</h3>
-                    <p>Un espacio pensado para jugar en familia y con amigos. Ambiente tranquilo.</p>
+
+                <div class="clients-warning">
+                    <p><strong>La lista no limita la aplicación de las reglas.</strong></p>
+                    <p>Cualquier software que proporcione una ventaja injusta puede ser sancionado aunque no aparezca mencionado expresamente.</p>
                 </div>
             </div>
         </main>
