@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rangos | Tienda Family Network</title>
+<meta name="description" content="Rangos permanentes y protecciones de Family Network. Elegí tu rango y mejorá tu experiencia.">
+<meta name="theme-color" content="#09add3">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="header-splash">
+    <div class="splash__background"><div id="particles-container"></div></div>
+</div>
+
+<header class="triplezone-header">
+    <div class="triplezone-wrapper prioritate">
+        <div class="top-bar">
+            <a class="back-btn" href="index.html"><i class="fas fa-chevron-left"></i> <span>Volver al inicio</span></a>
+            <div class="profile-avatar" onclick="openLogin()">
+                <div class="profile-description">
+                    <p class="profile-title">Invitado</p>
+                    <p class="profile-description-text">Inicia sesión</p>
+                </div>
+                <div class="profile-head">
+                    <img class="avatar-head" id="avatar_MC" src="https://minotar.net/avatar/MHF_Question/64" alt="avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="triplezone-header-g">
+            <a class="widget minecraft-widget" onclick="copyIp()">
+                <div class="widget-icon">
+                    <span class="player-count" id="player-count">–</span>
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="description-widget">
+                    <p class="widget-title">Jugadores</p>
+                    <p class="widget-description">Online ahora</p>
+                </div>
+            </a>
+
+            <div class="header-logo">
+                <a href="index.html">
+                    <span style="font-size:38px; font-weight:800; color:var(--primary-text-color); letter-spacing:3px; text-transform:uppercase;">🌐 Family <span style="color:var(--main-color);">Network</span></span>
+                </a>
+            </div>
+
+            <div class="widget discord-widget" onclick="showToast('Discord próximamente disponible')">
+                <div class="description-widget">
+                    <p class="widget-title">Discord</p>
+                    <p class="widget-description">Próximamente</p>
+                </div>
+                <div class="widget-icon">
+                    <span id="discord-count">–</span>
+                    <i class="fab fa-discord"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="triplezone-wrapper">
+    <nav class="triplezone__second--nav">
+        <ul class="second__nav--list">
+            <li class="list__second--nav">
+                <a class="list__second__category--link" href="index.html">Inicio</a>
+            </li>
+            <li class="list__second--nav">
+                <a class="list__second__category--link" href="modos.html">Modos <i class="fas fa-chevron-down"></i></a>
+                <ul class="triplezone__second--dropdown">
+                    <li><a href="modos.html">Lobby</a></li>
+                    <li><a href="modos.html">Survival</a></li>
+                    <li><a href="modos.html">Bedrock</a></li>
+                </ul>
+            </li>
+            <li class="list__second--nav">
+                <a class="list__second__category--link active" href="rangos.html">Tienda <i class="fas fa-chevron-down"></i></a>
+                <ul class="triplezone__second--dropdown">
+                    <li><a href="rangos.html">Rangos Permanentes</a></li>
+                    <li><a href="rangos.html">Mejoras de Rango</a></li>
+                    <li><a href="protecciones.html">Protecciones</a></li>
+                </ul>
+            </li>
+            <li class="list__second--nav">
+                <a class="list__second__category--link" href="como-jugar.html">Cómo jugar <i class="fas fa-chevron-down"></i></a>
+                <ul class="triplezone__second--dropdown">
+                    <li><a href="como-jugar.html">Java</a></li>
+                    <li><a href="como-jugar.html">Bedrock</a></li>
+                    <li><a href="protecciones.html">Protecciones</a></li>
+                </ul>
+            </li>
+            <li class="list__second--nav">
+                <a class="list__second__category--link" href="faq.html">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="body--with-sidebar">
+
+        <aside class="triplezone-sidebar">
+            <div class="sidebar-header" onclick="toggleSidebar()">
+                <p>Categorías</p>
+                <i class="fas fa-bars" style="color:var(--main-color);"></i>
+            </div>
+            <nav class="sidebar-nav" id="toggle-mobile-nav">
+                <ul>
+                    <li><a href="index.html">🏰 Inicio</a></li>
+                    <li class="triplezone-toggle-dropdown">
+                        <a href="#" onclick="toggleLi(this)">🎮 Modos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="triplezone-dropdown">
+                            <li><a href="modos.html">Lobby</a></li>
+                            <li><a href="modos.html">Survival</a></li>
+                            <li><a href="modos.html">Bedrock</a></li>
+                        </ul>
+                    </li>
+                    <li class="triplezone-toggle-dropdown">
+                        <a href="#" onclick="toggleLi(this)" class="active">💰 Tienda <i class="fas fa-chevron-down"></i></a>
+                        <ul class="triplezone-dropdown">
+                            <li><a href="rangos.html">Rangos Permanentes</a></li>
+                            <li><a href="rangos.html">Mejoras de Rango</a></li>
+                            <li><a href="protecciones.html">Protecciones</a></li>
+                        </ul>
+                    </li>
+                    <li class="triplezone-toggle-dropdown">
+                        <a href="#" onclick="toggleLi(this)">📘 Cómo jugar <i class="fas fa-chevron-down"></i></a>
+                        <ul class="triplezone-dropdown">
+                            <li><a href="como-jugar.html">Java</a></li>
+                            <li><a href="como-jugar.html">Bedrock</a></li>
+                            <li><a href="protecciones.html">Protecciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">❓ FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar__panel">
+                <h3>🏆 Top Donador</h3>
+                <div class="module-row">
+                    <img src="https://minotar.net/helm/tumama/64" alt="top">
+                    <div class="info">
+                        <div class="ign">tumama</div>
+                        <div class="amount">Primer protector de la red</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar__panel">
+                <h3>🕒 Compras Recientes</h3>
+                <div class="module-row">
+                    <img src="https://minotar.net/helm/tumama/64" alt="compra">
+                    <div class="info">
+                        <div class="ign">tumama</div>
+                        <div class="amount">Protección pequeña · $500</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar__panel">
+                <h3>📬 Contacto</h3>
+                <p>¿Tenés dudas o querés comprar un rango? Escribinos y te ayudamos a coordinar la entrega.</p>
+                <div class="contact-row">
+                    <a href="#" onclick="showToast('Discord próximamente disponible')">Discord</a>
+                    <a href="#" onclick="copyIp()">Copiar IP</a>
+                </div>
+            </div>
+
+            <div class="sidebar__panel">
+                <h3>⚙️ Información</h3>
+                <p>Family Network no está afiliado con Mojang AB. Minecraft es una marca registrada de Mojang AB.</p>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="triplezone-main-content">
+            <p class="page--title">💰 Rangos Permanentes</p>
+            <p class="page--subtitle">Progresá en el servidor. Los rangos son permanentes y la entrega se coordina por Discord o contacto.</p>
+
+            <div class="featured__packages">
+                <p class="featured__packages--title">✦ Mejoras de rango</p>
+                <div class="featured__packages--flex">
+                    <div class="featured__package" onclick="showToast('📩 Escribinos para comprar el rango Dios')">
+                        <div class="featured__package--circle">👑</div>
+                        <div class="featured__package--text">
+                            <p>Rango Dios</p>
+                            <p class="price">$20 <small>USD</small></p>
+                            <p class="mini-desc">Máximo poder</p>
+                        </div>
+                    </div>
+                    <div class="featured__package" onclick="showToast('📩 Escribinos para comprar el rango Élite')">
+                        <div class="featured__package--circle">⚔️</div>
+                        <div class="featured__package--text">
+                            <p>Rango Élite</p>
+                            <p class="price">$4 <small>USD</small></p>
+                            <p class="mini-desc">El favorito</p>
+                        </div>
+                    </div>
+                    <div class="featured__package" onclick="location.href='protecciones.html'">
+                        <div class="featured__package--circle">🛡️</div>
+                        <div class="featured__package--text">
+                            <p>Protecciones</p>
+                            <p class="price">Desde $500</p>
+                            <p class="mini-desc">In-game · ver más</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ranks-grid">
+                <div class="rank-card">
+                    <div class="rank-name">Usuario</div>
+                    <div class="rank-desc">Para empezar</div>
+                    <div class="rank-price">Gratis</div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 2</li>
+                        <li>Homes: 1</li>
+                        <li>Bloques de protección básicos</li>
+                        <li class="off">Prefijo exclusivo</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📍 Este rango lo tenés al entrar')">Rango actual</button>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-name">VIP</div>
+                    <div class="rank-desc">Más espacio</div>
+                    <div class="rank-price">$2 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 3</li>
+                        <li>Homes: 3</li>
+                        <li>Prefijo VIP exclusivo</li>
+                        <li class="off">Protección épica</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar VIP')">Comprar</button>
+                </div>
+                <div class="rank-card popular">
+                    <div class="ribbon">⭐ Popular</div>
+                    <div class="rank-name">Élite</div>
+                    <div class="rank-desc">El equilibrio perfecto</div>
+                    <div class="rank-price">$4 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 5</li>
+                        <li>Homes: 6</li>
+                        <li>Prefijo Élite exclusivo</li>
+                        <li>Protecciones hasta 40x40</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Élite')">Comprar</button>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-name">Leyenda</div>
+                    <div class="rank-desc">Constructores serios</div>
+                    <div class="rank-price">$7 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 7</li>
+                        <li>Homes: 9</li>
+                        <li>Prefijo Leyenda exclusivo</li>
+                        <li>Protecciones hasta 40x40</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Leyenda')">Comprar</button>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-name">Demonio</div>
+                    <div class="rank-desc">Más poder</div>
+                    <div class="rank-price">$10 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 9</li>
+                        <li>Homes: 12</li>
+                        <li>Prefijo Demonio exclusivo</li>
+                        <li>Acceso a zonas exclusivas</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Demonio')">Comprar</button>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-name">Ángel</div>
+                    <div class="rank-desc">Casi sin límites</div>
+                    <div class="rank-price">$15 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 12</li>
+                        <li>Homes: 15</li>
+                        <li>Prefijo Ángel exclusivo</li>
+                        <li>Acceso a zonas exclusivas</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Ángel')">Comprar</button>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-name">Dios</div>
+                    <div class="rank-desc">El máximo rango</div>
+                    <div class="rank-price">$20 <small>USD</small></div>
+                    <ul class="rank-features">
+                        <li>Protecciones: 15</li>
+                        <li>Homes: 20</li>
+                        <li>Prefijo Dios exclusivo</li>
+                        <li>Protecciones hasta 60x60</li>
+                    </ul>
+                    <button class="btn-buy" onclick="showToast('📩 Escribinos para comprar Dios')">Comprar</button>
+                </div>
+            </div>
+
+            <p style="text-align:center; font-size:12px; margin-top:16px; color:var(--secondary-text-color);">⚠️ Los precios son referenciales. Escribinos para coordinar tu compra y entrega.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-triplezone">
+        <div class="footer-copyright">
+            <p class="copyright-title">© Family Network 2026. Todos los derechos reservados.</p>
+            <p class="copyright-subtitle">Hecho con 💙 para nuestra comunidad de jugadores.</p>
+            <p class="disclaimer">Family Network no está afiliado con Mojang AB. Minecraft es una marca registrada de Mojang AB. Este sitio no es una empresa avalada por Mojang AB.</p>
+        </div>
+    </footer>
+</div>
+
+<input id="ipServer" value="stank-tara.tun.ply.gg" readonly>
+
+<div class="toast" id="toast"></div>
+<script src="assets/script.js"></script>
+</body>
+</html>
