@@ -21,7 +21,7 @@ const GOOGLE_CLIENT_ID = ''; // TODO: tu client.id de Google Cloud
 
 // ===================== Utilities =====================
 function copyIp() {
-    const ip = document.getElementById('ipServer')?.value || 'katherine-awakenings.tun.ply.gg';
+    const ip = document.getElementById('ipServer')?.value || 'mc.familynetwork.site';
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(ip).then(() => showToast('✅ IP copiada: ' + ip));
     } else {

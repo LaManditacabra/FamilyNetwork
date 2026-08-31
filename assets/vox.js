@@ -28,7 +28,7 @@
     updateNavbar();
 
     ipButton?.addEventListener('click', async () => {
-        const serverIp = ipButton.dataset.serverIp || 'katherine-awakenings.tun.ply.gg';
+        const serverIp = ipButton.dataset.serverIp || 'mc.familynetwork.site';
         try {
             await navigator.clipboard.writeText(serverIp);
         } catch {
@@ -55,17 +55,17 @@
     const loadPlayerCount = async () => {
         if (!playerCount) return;
         try {
-            const response = await fetch('https://api.mcsrvstat.us/3/katherine-awakenings.tun.ply.gg', { cache: 'no-store' });
+            const response = await fetch('https://api.mcsrvstat.us/3/mc.familynetwork.site', { cache: 'no-store' });
             if (!response.ok) throw new Error('Respuesta inválida');
             const data = await response.json();
             if (data.online) {
                 const online = Number(data.players?.online ?? 0);
                 playerCount.textContent = `${online.toLocaleString('es-ES')} jugadores`;
             } else {
-                playerCount.textContent = 'Java · katherine-awakenings.tun.ply.gg';
+                playerCount.textContent = 'Java · mc.familynetwork.site';
             }
         } catch {
-            playerCount.textContent = 'Java · katherine-awakenings.tun.ply.gg';
+            playerCount.textContent = 'Java · mc.familynetwork.site';
         }
     };
 
